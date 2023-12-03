@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.06);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "poppins";
+}
+
+.label {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: rgba(0, 0, 0, 0.842);
+}
+
+.label::selection {
+  background: none;
+}
+
+.link_box {
+  position: relative;
+}
+
+#link {
+  width: 34rem;
+  height: 6rem;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.256);
+  padding-left: 1rem;
+  border-radius: 1rem;
+  color: rgba(0, 0, 0, 0.586);
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "poppins";
+}
+
+.copy-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 255, 0.516);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.copy_flag {
+  position: absolute;
+  background-color: rgba(0, 0, 255, 0.516);
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-family: "poppins";
+  top: -6rem;
+  right: 0.6rem;
+  display: none;
+}
+
+.tail {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 45%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 255, 0.516); /* You can change the color */
+  transform: rotate(180deg);
+  bottom: -1rem;
+}
