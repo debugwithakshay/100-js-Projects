@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10rem;
+  align-items: center;
+  background: rgba(0, 0, 255, 0.209);
+}
+
+.spinner {
+  width: 32rem;
+  height: 32rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.5rem dotted grey;
+  position: relative;
+  transition: all 2s;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+
+.spinner .part {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: var(--clr);
+  transform-origin: bottom right;
+  transform: rotate(calc(45deg * var(--i)));
+  clip-path: polygon(0 0, 59% 0, 100% 100%, 0 59%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prize {
+  font-family: "poppins";
+  color: #fff;
+  font-size: 2rem;
+  transform: rotate(40deg);
+}
+
+.stopper {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(0, 0, 0, 0.646);
+  clip-path: polygon(65% 0, 37% 0, 50% 100%);
+  transform: translate(-50%);
+  top: 3rem;
+  left: 50%;
+  z-index: 99999;
+  transform-origin: top;
+  transition: all 0.3s;
+}
+
+.spinBtn {
+  padding: 1rem;
+  font-family: "poppins";
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: rgba(0, 0, 255, 0.502);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.spinBtn:active {
+  transform: scale(0.9);
+  background-color: rgba(0, 0, 255, 0.602);
+}
