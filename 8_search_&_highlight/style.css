@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+}
+
+.background1 {
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(5, 4, 4, 0.865);
+}
+
+.background2 {
+  width: 50%;
+  height: 100vh;
+}
+
+.card {
+  width: 80%;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0.1rem 0.3rem 5rem rgba(0, 0, 0, 0.1),
+    0.3rem 0.3rem 3rem rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.searchSection {
+  display: flex;
+  justify-content: center;
+}
+
+#searchBar {
+  width: 50%;
+  height: 4rem;
+  outline: none;
+  border: 2px solid rgba(5, 4, 4, 0.865);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: rgba(5, 4, 4, 0.765);
+}
+
+.paragraph {
+  font-size: 1.9rem;
+  line-height: 4rem;
+}
+
+.highlight{
+    background-color: rgb(255, 255, 67);
+}
