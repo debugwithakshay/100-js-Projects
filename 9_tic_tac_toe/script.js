@@ -36,6 +36,7 @@ function changingPlayer() {
 //Reseting
 resetBtn.addEventListener("click", () => {
   for (let block of blocks) {
+    block.addEventListener("click", changingPlayer)
     block.innerText = "";
     statusText.innerText = "X's Turn";
     turn = "X";
