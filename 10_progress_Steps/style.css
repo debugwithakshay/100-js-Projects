@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 50rem;
+  font-family: "poppins";
+  font-size: 2rem;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.4rem;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: -999;
+}
+
+.progress {
+  background-color: rgba(0, 0, 255, 0.525);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.4rem;
+  width: 0%;
+  transform: translateY(-50%);
+  z-index: -999;
+  transition: all 0.4s;
+}
+
+.circle{
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #eaeaea;
+}
+
+.active{
+  border: 3px solid rgba(0, 0, 255, 0.525);
+  opacity: 1;
+  transition: all 1s;
+}
+
+.buttonBox {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.button {
+  padding: 1rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.8rem;
+  background-color: rgba(0, 0, 255, 0.525);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: rgba(0, 0, 255, 0.322);
+  cursor: not-allowed;
+}
