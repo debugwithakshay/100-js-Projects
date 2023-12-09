@@ -14,6 +14,12 @@ Get ready for a rollercoaster of code, laughter, and maybe a few "aha!" moments.
 
 So buckle up, hit that star button, and join the JavaScript Joyride – where every line of code is a step closer to programming paradise! 💻✨**
 
+# How to Open This Project
+1. Download or Clone this Repository
+2. Open it with Vscode
+3. Install Live Server Extension by Ritwick Dey.
+4. Click on go live on bottom right corner.
+5. A New Window will Open on your Default Browser, now you can navigate to any project and view it.
 
 # Want to Contribute?  🚀
 
