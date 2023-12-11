@@ -27,4 +27,4 @@ So buckle up, hit that star button, and join the JavaScript Joyride – where ev
 
 **2. If you encounter a project that isn't functioning properly, you can contribute by debugging it or by notifying us of the issue. 🛠️**
 
-**3. Please don't contribute related CSS or HTML because this repository only JS Based.**
+**3. You can also contribute on CSS, like making a project responsive, adding animation , etc.**
