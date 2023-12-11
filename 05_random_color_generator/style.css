@@ -98,7 +98,7 @@ body {
 
 .copyflag {
   position: absolute;
-  bottom: -5rem;
+  bottom: 0rem;
   left: 4%;
   background-color: #00000083;
   color: #fff;
@@ -109,6 +109,7 @@ body {
   font-family: "poppins";
   gap: 1rem;
   font-size: 2rem;
+  opacity: 0;
   border-radius: 0.5rem;
   transition: all 0.6s;
 }
