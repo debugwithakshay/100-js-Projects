@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.mode {
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.623);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mode:active {
+  scale: 0.95;
+}
+
+.clock--analog {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border: 3px solid red;
+  z-index: 99999;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.hand {
+  position: absolute;
+  width: 0.3rem;
+  bottom: 50%;
+  left: 50%;
+  background-color: #000;
+  transform-origin: bottom;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.hand--second {
+  height: 7rem;
+  width: 0.2rem;
+  background-color: red;
+}
+
+.hand--minute {
+  height: 5.8rem;
+}
+
+.hand--hour {
+  height: 4.5rem;
+}
+
+.clock--digital {
+  font-size: 5rem;
+  display: flex;
+  gap: 1rem;
+  font-weight: 300;
+}
+
+.date--box {
+  font-size: 1.7rem;
+}
