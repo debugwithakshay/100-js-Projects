@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff3fa;
+}
+
+.main__card {
+  width: 35rem;
+  height: 50rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.main__card::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 20rem;
+  background-color: rgba(255, 0, 0, 0.417);
+  z-index: 9;
+  top: -5rem;
+  border-bottom-left-radius: 30rem;
+  border-bottom-right-radius: 30rem;
+  transform: rotate(10deg);
+}
+
+.image__container {
+  background: url("https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/30-ant-man.jpg");
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 99;
+  box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: #000000ab;
+}
+
+.gender__box {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.appearance__box {
+  display: flex;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.height_box,
+.Weight_box,
+.hairColor_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.height,
+.weight,
+.hairColor {
+  font-size: 1.4rem;
+  color: rgb(109, 109, 109);
+  font-weight: 500;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.751);
+}
+
+.navigation__box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+.navigation__box span {
+  background-color: rgba(0, 0, 255, 0.649);
+  border-radius: 50%;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.navigation__box span::selection{
+    background: none;
+}
