@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary - Search for Meanings</title>
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dictionary_box">
+      <!-- headingBox -->
+      <h1 class="main_heading">English Dictionary</h1>
+
+      <!-- inputBox -->
+      <div class="inputBox">
+        <span class="material-symbols-rounded icon--search"> search </span>
+        <input
+          type="text"
+          name="search"
+          id="input"
+          placeholder="Search a word"
+        />
+        <span class="material-symbols-rounded icon--close">
+            close
+            </span>
+      </div>
+
+      <!-- resultBox -->
+      <div class="resultBox">
+
+        <div class="resultBox--left">
+            <h2 class="find_word">hello</h2>
+            <p class="latin-text">/həˈloʊ/</p>
+        </div>
+        <span class="material-symbols-rounded icon--speaker">
+            volume_up
+            </span>
+      </div>
+
+      <!-- meaningBox -->
+      <div class="meaningBox commonBoxes">
+        <div class="commonBoxes--small">
+            <h3 class="heading-secondary">
+                Meaning
+            </h3>
+            <p class="paragraph-secondary">A greeting (salutation) said when meeting someone or acknowledging someone’s arrival or presence.</p>
+        </div>
+      </div>
+
+      <!-- exampleBox -->
+      <div class="exampleBox commonBoxes">
+        <div class="commonBoxes--small">
+            <h3 class="heading-secondary">
+                Example
+            </h3>
+            <p class="paragraph-secondary">Hello? Is anyone there?</p>
+        </div>
+      </div>
+
+      <!-- synonymsBox -->
+      <div class="synonymsBox commonBoxes">
+        <div class="commonBoxes--small">
+            <h3 class="heading-secondary">
+                Synonyms
+            </h3>
+            <p class="paragraph-secondary">greeting</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
