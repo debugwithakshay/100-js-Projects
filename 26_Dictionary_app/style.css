@@ -70,6 +70,16 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.material-symbols-rounded:active{
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.material-symbols-rounded::selection{
+  background: none;
 }
 
 .icon--close {
@@ -94,7 +104,7 @@ body {
     font-weight: 600;
 }
 
-.latin-text{
+.phonetic{
     margin-top: 0.2rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -130,4 +140,15 @@ body {
     font-weight: 600;
     color: #00000066;
     margin-top: 0.5rem;
+}
+
+.notFound{
+ position: absolute;
+ left: 1rem;
+ bottom: -2rem;
+ margin-top: 0.4rem;
+ font-weight: 500;
+ font-size: 1.1rem;
+ color: rgba(255, 0, 0, 0.713);
+ display: none;
 }
