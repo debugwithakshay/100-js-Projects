@@ -52,3 +52,4 @@ function fetchHero() {
   );
   myRequest.send();
 }
+  
