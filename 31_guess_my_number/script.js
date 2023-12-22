@@ -77,7 +77,7 @@ function gameover() {
 }
 
 playAgainBtn.addEventListener("click", () => {
-    // cover.style.transform = "scale(1)"
+    cover.style.transform = "scale(1)"
     generateRandomNumber()
     score.innerText = 20;
     if(body[0].classList[0] == "correct"){

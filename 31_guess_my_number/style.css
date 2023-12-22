@@ -91,7 +91,7 @@ body {
   height: 100%;
   position: absolute;
   background-color: #fff;
-  transform: scale(0);
+  transform: scale(1);
   display: flex;
   justify-content: center;
   align-items: center;
