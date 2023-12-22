@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number</title>
+  </head>
+  <body class="normal">
+    <!-- sound effects -->
+    <audio src="sound/matched.mpga" id="matchedSound"></audio>
+    <audio src="sound/wrong.mp3" id="wrongSound"></audio>
+    <audio src="sound/game_over.mpga" id="gameoverSound"></audio>
+    <div class="container">
+      <!-- conatiner top -->
+      <div class="container--top">
+        <div class="range__section">
+          <button class="againBtn">Play Again!</button>
+          <span class="range">(Between 1 and 20)</span>
+        </div>
+        <h1 class="primary__heading">Guess My Number!</h1>
+      </div>
+
+      <!-- division section -->
+      <div class="division">
+        <div class="line"></div>
+        <div class="randomNumberBox">
+          <span class="randomNumber">10</span>
+          <div class="randomNumberBoxCover">
+            <span>?</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- conatiner bottom -->
+      <div class="container--bottom">
+        <div class="inputBox">
+          <input type="number" name="input" id="input" min="1" max="20" />
+          <button class="checkBtn">Check!</button>
+          <p class="status">Start Guessing</p>
+        </div>
+
+        <div class="scoreBox">
+            <div>
+                <span>💯 Score:</span>
+                <p class="score">20</p>
+            </div>
+            
+            <div>
+                <span>🥇 HighScore:</span>
+                <p class="highScore">0</p>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
