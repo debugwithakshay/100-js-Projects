@@ -1,0 +1,1 @@
+let baseSalary = 30000
