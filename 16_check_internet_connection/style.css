@@ -64,7 +64,6 @@ main {
   align-self: self-start;
   padding: 0.5rem;
   border-radius: 50%;
-  color: #fff;
   font-size: 2rem;
 }
 
@@ -111,11 +110,16 @@ main {
   transform: scale(0.98);
 }
 
+.button--disabled{
+  background-color: rgb(126, 126, 248, 0.3);
+}
+
 .icon--close {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: rgb(117, 117, 117);
+  color: #757575;
   font-size: 2rem;
   cursor: pointer;
+  width: 2rem;
 }
