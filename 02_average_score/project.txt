@@ -1,0 +1,1 @@
+//find out aveage score of a team that contains players with score like player1 = 20
