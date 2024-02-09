@@ -1,0 +1,1 @@
+//write multiple of givenNumber
