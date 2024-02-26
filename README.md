@@ -14,6 +14,11 @@ Get ready for a rollercoaster of code, laughter, and maybe a few "aha!" moments.
 
 So buckle up, hit that star button, and join the JavaScript Joyride – where every line of code is a step closer to programming paradise! 💻✨**
 
+# Projects Type <br>
+1-5  = Basic Math Projects 📐 <br>
+6-10 = String & Number Manipulation 🔢 <br>
+
+
 # How to Open This Project
 1. Download or Clone this Repository
 2. Open it with Vscode
