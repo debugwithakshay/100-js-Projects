@@ -1,0 +1,1 @@
+//take name from user and give number of chracters in name
