@@ -20,6 +20,7 @@ So buckle up, hit that star button, and join the JavaScript Joyride – where ev
 11-15 = Conditional Projects ⛓️ <br>
 16-20 = Looping Projects 🔁 <br>
 21-30 = Function Based Projects ⚒️<br>
+31-60 = DOM Projects 🎨 <br>
 
 
 # How to Open This Project
