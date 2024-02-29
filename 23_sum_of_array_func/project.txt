@@ -1,0 +1,1 @@
+//make a function that take array of numbers and give total sum
