@@ -1,4 +1,4 @@
-# 1000 Javascipt Projects
+# 100 Javascipt Projects
 
 **🎉 Welcome to the "JavaScript Joyland" 🚀**
 
