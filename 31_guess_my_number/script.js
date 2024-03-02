@@ -1,88 +1,67 @@
-let randomNumber = document.querySelector(".randomNumber");
-let input = document.querySelector("#input");
-let checkbtn = document.querySelector(".checkBtn");
-let playAgainBtn = document.querySelector(".againBtn")
-let statusText = document.querySelector(".status");
+//generating a random number from 1 to 20
+let randNum;
+function generateRand() {
+  randNum = Math.floor(Math.random() * 20 + 1);
+}
+generateRand();
+
+//when user click on check btn
+let checkBtn = document.querySelector(".checkBtn");
+let userInput = document.querySelector("#input");
 let score = document.querySelector(".score");
+let statusText = document.querySelector(".status");
 let highScore = document.querySelector(".highScore");
-let body = document.getElementsByTagName("body");
-let cover = document.querySelector(".randomNumberBoxCover")
+let randNumCover = document.querySelector(".randomNumber");
 
-//sound effects variables
-let gameoverSound = document.querySelector("#gameoverSound")
-let matchedSound = document.querySelector("#matchedSound")
-let wrongSound = document.querySelector("#wrongSound")
-generateRandomNumber();
+//sounds variables
+let wrongSound = document.querySelector("#wrongSound");
+let gameoverSound = document.querySelector("#gameoverSound");
+let matchedSound = document.querySelector("#matchedSound");
 
-//generating Random Number
-function generateRandomNumber() {
-  let generatedRandomNumber = Math.floor(Math.random() * 20 + 1);
-  randomNumber.innerText = generatedRandomNumber;
+checkBtn.addEventListener("click", checkNumber);
+function checkNumber() {
+  console.log(userInput.value, randNum);
+  if (userInput.value !== "" && userInput.value < randNum) {
+    statusText.innerText = "Go Higher";
+    decreaseScore();
+    wrongSound.play();
+  } else if (userInput.value !== "" && userInput.value > randNum) {
+    statusText.innerText = "Go Low";
+    decreaseScore();
+    wrongSound.play();
+  } else if (userInput.value !== "" && userInput.value == randNum) {
+    statusText.innerText = "You Won";
+    matchedSound.play();
+    winning();
+  }
 }
 
-//checking input with random number
-checkbtn.addEventListener("click", () => {
-  // if larger
-  if (randomNumber.innerText > input.value && score.innerText != 0) {
-    statusText.innerText = "Go high";
-    wrongSound.play()
+//decreasing score on wrong guess
+function decreaseScore() {
+  if (userInput.value !== randNum) {
     score.innerText--;
-    // changing color
-    body[0].classList.replace("normal", "wrong");
-    setInterval(() => {
-      body[0].classList.replace("wrong", "normal");
-    }, 300);
   }
+}
 
-  //if equal
-  else if (randomNumber.innerText === input.value) {
-    statusText.innerText = "Matched";
-    matchedSound.play()
-    score.innerText--;
-    setHighScore();
-    cover.style.transform = "scale(0)"
-    body[0].classList.replace("normal", "correct");
-  }
-
-  //if smaller
-  else if (randomNumber.innerText < input.value && score.innerText != 0) {
-    statusText.innerText = "Go Low";
-    wrongSound.play()
-    score.innerText--;
-    // changing color
-    body[0].classList.replace("normal", "wrong");
-    setInterval(() => {
-      body[0].classList.replace("wrong", "normal");
-    }, 500);
-  }
-
-  score.innerText == 0 ? gameover() : console.log();
-});
-
-//setting HighScore
-function setHighScore() {
-  if (score.innerText > highScore.innerText) {
+//when won
+function winning() {
+  randNumCover.innerText = randNum;
+  checkBtn.disabled = true;
+  checkBtn.style.cursor = "not-allowed";
+  if (highScore.innerText < score.innerText) {
     highScore.innerText = score.innerText;
   }
 }
 
-//gameover
-function gameover() {
-  if (score.innerText == 0) {
-    score.innerText = 0;
-    statusText.innerText = "Game Over"
-    gameoverSound.play()
-    body[0].classList.replace("normal", "wrong");
-  }
+//play Again
+let playAgainBtn = document.querySelector(".againBtn");
+playAgainBtn.addEventListener("click", playAgain);
+function playAgain() {
+  generateRand();
+  checkBtn.disabled = false;
+  checkBtn.style.cursor = "pointer";
+  statusText.innerText = "Start Guessing";
+  userInput.value = "";
+  randNumCover.innerText = "?";
+  score.innerText = "20"
 }
-
-playAgainBtn.addEventListener("click", () => {
-    cover.style.transform = "scale(1)"
-    generateRandomNumber()
-    score.innerText = 20;
-    if(body[0].classList[0] == "correct"){
-        body[0].classList.replace("correct", "normal");
-    } else if(body[0].classList[0] == "wrong"){
-        body[0].classList.replace("correct", "normal");
-    }
-})

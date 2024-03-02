@@ -17,18 +17,8 @@ body {
   height: 100vh;
   width: 100%;
   padding: 2rem;
-}
-
-.wrong {
-  background-color: #ff0000c9;
-}
-
-.correct {
-  background-color: yellowgreen;
-}
-
-.normal {
   background-color: #000000cc;
+  cursor: ;
 }
 
 .container {
