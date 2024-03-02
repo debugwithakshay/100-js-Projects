@@ -32,8 +32,8 @@ So buckle up, hit that star button, and join the JavaScript Joyride – where ev
 
 # Want to Contribute?  🚀
 
-**1. Everyone is invited to contribute to this repository. Just remember, this repository is tailored for beginners, so refrain from using overly complex methods to shorten the code. If you have an alternative approach that is readable and beginner-friendly for any project, please feel free to contribute.** <br>
+1. Everyone is invited to contribute to this repository. Just remember, this repository is tailored for beginners, so refrain from using overly complex methods to shorten the code. If you have an alternative approach that is readable and beginner-friendly for any project, please feel free to contribute. <br>
 
-**2. If you encounter a project that isn't functioning properly, you can contribute by debugging it or by notifying us of the issue. 🛠️**
+2. If you encounter a project that isn't functioning properly, you can contribute by debugging it or by notifying us of the issue. 🛠️
 
-**3. You can also contribute on CSS, like making a project responsive, adding animation , etc.**
+3. You can also contribute on CSS, like making a project responsive, adding animation , etc.
