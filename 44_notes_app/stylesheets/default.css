@@ -1,0 +1,35 @@
+.default-page {
+  height: 100vh;
+  width: calc(100% - 80px);
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.icon--menuOpen {
+  position: absolute;
+  top: 2.3rem;
+  font-size: 2.7rem;
+  left: 1rem;
+  cursor: pointer;
+  font-variation-settings: "wght" 300;
+  display: none;
+}
+
+.default-image {
+  width: 40rem;
+}
+
+.default-heading {
+  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+}

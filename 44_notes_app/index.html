@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png" />
+
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="stylesheets/base.css" />
+    <link rel="stylesheet" href="stylesheets/navbar.css" />
+    <link rel="stylesheet" href="stylesheets/default.css" />
+
+    <title>Welcome to Notify</title>
+  </head>
+  <body>
+    <!-- navigation menu -->
+    <nav class="navbar">
+      <span class="material-symbols-rounded icon--menuClose"> menu_open </span>
+
+      <ul class="navigation-link-box">
+        <li>
+          <a href="#"><span class="material-symbols-rounded"> add </span></a>
+        </li>
+
+        <li>
+          <a href="#"
+            ><span class="material-symbols-rounded"> note_stack </span></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- this is default page -->
+    <section class="default-page">
+      <span class="material-symbols-rounded icon--menuOpen"> menu </span>
+      <img src="assets/default.svg" alt="default image" class="default-image" />
+      <h1 class="default-heading">Welcome to Notify</h1>
+    </section>
+
+    <script src="scripts/sideMenu.js"></script>
+  </body>
+</html>
