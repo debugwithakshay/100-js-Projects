@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
+  padding: 2rem;
 }
 
 .icon--menuOpen {
@@ -23,13 +24,48 @@
 }
 
 .default-image {
-  width: 40rem;
+  width: 35rem;
 }
 
 .default-heading {
   font-size: 3rem;
   font-family: "Poppins";
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
-  color: #000;
+  color: #1e1e1e;
+}
+
+.default-paragraph {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(162, 162, 162);
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.default-paragraph span {
+  margin: 0 0.5rem;
+  color: rgb(89, 89, 89);
+}
+
+@media (max-width: 600px) {
+  .default-image {
+    width: 20rem;
+  }
+
+  .default-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .default-image {
+    width: 30rem;
+  }
+
+  .default-paragraph {
+    font-size: 1.25rem;
+  }
 }

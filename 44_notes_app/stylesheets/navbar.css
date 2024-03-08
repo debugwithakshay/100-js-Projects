@@ -9,7 +9,7 @@
   transition: all 0.5s;
 }
 
-.navbar .icon--menuClose {
+.icon--menuClose {
   font-size: 3rem;
   position: absolute;
   top: 2rem;
@@ -31,6 +31,7 @@
 
 .navigation-link-box li {
   list-style: none;
+  position: relative;
 }
 
 .navigation-link-box li a span {
@@ -38,4 +39,10 @@
   padding: 1rem;
   border-radius: 0.5rem;
   color: #5b5bff;
+  transition: all 0.4s;
 }
+
+.navigation-link-box li a span:hover {
+  transform: rotate(20deg);
+}
+

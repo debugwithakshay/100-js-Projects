@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="stylesheets/base.css" />
     <link rel="stylesheet" href="stylesheets/navbar.css" />
     <link rel="stylesheet" href="stylesheets/default.css" />
+    <link rel="stylesheet" href="stylesheets/addNotePage.css" />
+    <link rel="stylesheet" href="stylesheets/viewNotePage.css" />
 
     <title>Welcome to Notify</title>
   </head>
@@ -31,12 +33,18 @@
 
       <ul class="navigation-link-box">
         <li>
-          <a href="#"><span class="material-symbols-rounded"> add </span></a>
+          <a href="#"
+            ><span class="material-symbols-rounded icon--addNote">
+              add
+            </span></a
+          >
         </li>
 
         <li>
           <a href="#"
-            ><span class="material-symbols-rounded"> note_stack </span></a
+            ><span class="material-symbols-rounded icon--viewNote">
+              note_stack
+            </span></a
           >
         </li>
       </ul>
@@ -45,10 +53,28 @@
     <!-- this is default page -->
     <section class="default-page">
       <span class="material-symbols-rounded icon--menuOpen"> menu </span>
-      <img src="assets/default.svg" alt="default image" class="default-image" />
+      <img src="assets/notes.svg" alt="default image" class="default-image" />
       <h1 class="default-heading">Welcome to Notify</h1>
+      <p class="default-paragraph">
+        Click on to add icon to add a new note, or click on veiw notes to view
+        your previously added notes
+      </p>
     </section>
 
+    <!-- this is add Note Page -->
+    <section class="addNote-page">
+      <span class="material-symbols-rounded icon--menuOpen"> menu </span>
+      <h2>this is addnotes page</h2>
+    </section>
+
+    <!-- this is view Note page -->
+    <section class="viewNote-page">
+      <span class="material-symbols-rounded icon--menuOpen"> menu </span>
+      <h2>this is viewnotes page</h2>
+    </section>
+
+    <script src="scripts/variable.js"></script>
     <script src="scripts/sideMenu.js"></script>
+    <script src="scripts/pageSwitch.js"></script>
   </body>
 </html>
