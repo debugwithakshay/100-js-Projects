@@ -1,0 +1,67 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.primary-heading {
+  font-size: 7rem;
+  color: rgb(30, 30, 30);
+}
+
+.counter {
+  font-size: 10rem;
+  color: rgb(125, 125, 255);
+  font-weight: 500;
+}
+
+.control-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.control-btn {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  font-weight: 500;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.decrease-btn {
+  color: rgb(240, 110, 110);
+  border: 2px solid rgb(240, 110, 110);
+}
+
+.reset-btn {
+  color: rgb(52, 52, 52);
+  border: 2px solid rgb(52, 52, 52);
+}
+
+.increase-btn {
+  color: rgb(109, 212, 0);
+  border: 2px solid rgb(109, 212, 0);
+}
