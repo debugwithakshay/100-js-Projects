@@ -1,0 +1,49 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.bulb {
+  width: 30rem;
+  height: 30rem;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.bulb_off {
+  background-color: rgb(224, 230, 235);
+}
+
+.bulb_on {
+  background-color: yellow;
+}
+
+.switch {
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+}

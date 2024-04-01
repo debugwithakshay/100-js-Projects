@@ -1,3 +1,0 @@
-this project contains number of items and their price like,
-item1  = 199,
-item2  = 300 etc so find out total price of all products after discount.
