@@ -1,0 +1,51 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.color-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.colorBox {
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+.red {
+  background-color: rgb(244, 101, 101);
+}
+.yellow {
+  background-color: rgb(244, 230, 101);
+}
+.green {
+  background-color: rgb(168, 244, 101);
+}
+.blue{
+    background-color: rgb(101, 163, 244);
+}
