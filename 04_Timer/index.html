@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- alert popup -->
+      <div class="popup">
+        <p class="popup-msg">Hour should always less than 100</p>
+      </div>
+
+      <!-- timer container -->
+      <div class="timer-container">
+        <input id="hour" type="number" maxlength="99" />
+        <span class="seprator" maxlength="59">:</span>
+        <input id="minute" type="number" />
+        <span class="seprator">:</span>
+        <input id="second" type="number" maxlength="59" />
+      </div>
+
+      <!-- custom time snippet container -->
+      <div class="custom-time-container">
+        <div class="custom-time">00:10:00</div>
+        <div class="custom-time">00:15:00</div>
+        <div class="custom-time">00:30:00</div>
+      </div>
+
+      <!-- start timer btn -->
+      <button class="start-btn">Start</button>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>

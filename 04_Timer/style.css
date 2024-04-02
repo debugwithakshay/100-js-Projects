@@ -1,0 +1,113 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 5rem 2rem;
+  position: relative;
+}
+
+.timer-container {
+  width: 99%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 4rem;
+  font-family: "Poppins";
+}
+
+.timer-container input {
+  color: rgb(57, 57, 57);
+  padding: 1rem;
+  width: 10rem;
+  height: 10rem;
+  font-size: 4rem;
+  font-family: "Poppins";
+  text-align: center;
+  border: 2px solid rgb(44, 44, 44);
+}
+
+/* Hide the increment and decrement buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-time-container {
+  width: 99%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.custom-time {
+  width: 8.4rem;
+  height: 8.4rem;
+  font-size: 1.6rem;
+  background-color: rgb(169, 184, 248);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.start-btn {
+  font-family: "Poppins";
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  border: none;
+  background-color: rgb(82, 82, 238);
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  width: 30rem;
+  height: 8rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.1);
+  right: 2rem;
+  bottom: -10rem;
+  padding: 1.6rem;
+  transition: all 0.4s;
+  display: none;
+}
+
+.popup-msg {
+  font-size: 1.7rem;
+}
