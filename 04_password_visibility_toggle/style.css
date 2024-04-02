@@ -1,0 +1,66 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  background: #6767fb;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 38rem;
+  height: 10rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.passwordbox {
+  width: 100%;
+  height: 5rem;
+  position: relative;
+}
+
+#passwordInput {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(103, 103, 251);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  font-weight: 500;
+  background-color: transparent;
+}
+
+#passwordInput:focus {
+  outline: 1px solid black;
+}
+
+.visibility_icon {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
