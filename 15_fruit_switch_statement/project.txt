@@ -1,1 +1,0 @@
-//make a switch statement that check if given fruit is orange or not

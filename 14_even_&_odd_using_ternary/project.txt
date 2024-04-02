@@ -1,1 +1,0 @@
-make a program that tell odd or even using conditional/ternary operator

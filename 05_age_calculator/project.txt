@@ -1,1 +1,0 @@
-take birth year, take currunt year and give age of use

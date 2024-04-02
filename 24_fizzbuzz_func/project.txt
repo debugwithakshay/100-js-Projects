@@ -1,2 +1,0 @@
-//make a function that takes a number and gives output as "fizz" if divisible by 3
- and "buzz" if divisible by 5, and "fizzbuzz" if divisible by both.
