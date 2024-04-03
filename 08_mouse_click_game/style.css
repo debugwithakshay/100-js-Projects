@@ -1,0 +1,48 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-data {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.game-border {
+  width: 90%;
+  height: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.score {
+  font-size: 7rem;
+}
+
+.timer {
+  font-size: 2rem;
+  margin-left: 5rem;
+}
