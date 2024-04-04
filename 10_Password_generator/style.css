@@ -1,0 +1,88 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  background-color: rgb(103, 103, 243);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-container {
+  width: 30rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.primary-heading {
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgb(213, 213, 213);
+}
+
+#random_pass_box {
+  width: 100%;
+  height: 4.7rem;
+  margin-top: 2rem;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 3px;
+  padding: 1rem;
+  font-family: "Poppins";
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: rgb(99, 99, 99);
+}
+
+#random_pass_box:focus {
+  outline: 1px solid rgb(103, 103, 243);
+}
+
+.range_box {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+#password_length {
+  width: 87%;
+  margin-top: 1rem;
+  accent-color: rgb(103, 103, 243);
+}
+
+.range_value {
+  margin-top: 1rem;
+}
+
+.generate_pass_btn {
+  width: 100%;
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: rgb(103, 103, 243);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="project-container">
+        <h1 class="primary-heading">Password Generator</h1>
+        <input type="text" name="random password" id="random_pass_box" />
+        <div class="range_box">
+          <input
+            type="range"
+            name="password_length"
+            id="password_length"
+            max="30"
+            min="8"
+          />
+          <span class="range_value">00</span>
+        </div>
+        <button class="generate_pass_btn">Generate Password</button>
+      </div>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
