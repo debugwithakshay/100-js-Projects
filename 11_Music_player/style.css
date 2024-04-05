@@ -1,0 +1,120 @@
+.music_player {
+  width: 30rem;
+  height: 40rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.cassete {
+  width: 13rem;
+  height: 13rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+  position: relative;
+  background-image: url(assets/oppenhiemer.jpg);
+  background-position: center;
+  background-size: contain;
+  box-shadow: 2px 2px 5px rgb(255, 243, 134);
+  animation: cassete-rotate 2s infinite linear;
+  animation-play-state: paused;
+}
+
+/* cassete hole big*/
+.cassete::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(38, 38, 38);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 99;
+}
+
+/* cassete hole small */
+.cassete::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 999;
+}
+
+/* cassete rotate animation */
+@keyframes cassete-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about-music {
+  margin-top: 2rem;
+}
+
+.music-name {
+  font-family: "Poppins-light";
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.auther-name {
+  font-family: "Poppins-bold";
+  font-size: 1.2rem;
+  color: rgb(131, 131, 131);
+  text-align: center;
+}
+
+.music-time-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  bottom: 8rem;
+  font-family: "Poppins-bold";
+  gap: 1rem;
+  left: 50%;
+  transform: translateX(-45%);
+}
+
+.music-track-total {
+  width: 60%;
+  height: 5px;
+  background-color: rgb(188, 188, 188);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.music-track-current {
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  background-color: #4158d0;
+}
+
+.control-box {
+  position: absolute;
+  bottom: 1.3rem;
+}
+
+.play_pause_icon {
+  width: 5rem;
+  cursor: pointer;
+}

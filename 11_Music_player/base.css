@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-light";
+  src: url(fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-extralight";
+  src: url(fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+    

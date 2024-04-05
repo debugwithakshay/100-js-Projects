@@ -9,7 +9,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <main>
+      <!-- song -->
+      <audio src="audio/A_Lowly_Shoe_Salesman.mp3" id="song"></audio>
+      <!-- ---- -->
 
+      <div class="music_player">
+        <div class="cassete"></div>
+        <div class="about-music">
+          <h1 class="music-name">A Lowly Shoe Salesman</h1>
+          <p class="auther-name">Ludwig Göransson</p>
+        </div>
+        <div class="music-time-box">
+          <div>
+            <span class="current-min">00</span>
+            <span>:</span>
+            <span class="current-sec">00</span>
+          </div>
+          <div class="music-track-total">
+            <div class="music-track-current"></div>
+          </div>
+          <div>
+            <span class="total-min">00</span>
+            <span>:</span>
+            <span class="total-sec">00</span>
+          </div>
+        </div>
+        <div class="control-box">
+          <img
+            src="assets/play_icon.svg"
+            alt="play song"
+            class="play_pause_icon"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- scrips -->
+    <script src="scripts/script.js" defer></script>
   </body>
 </html>
