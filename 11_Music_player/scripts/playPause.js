@@ -37,3 +37,4 @@ function pause() {
   //changing play/pause icon
   playPauseBtn.src = "assets/play_icon.svg";
 }
+

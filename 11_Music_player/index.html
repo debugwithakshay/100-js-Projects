@@ -15,11 +15,29 @@
       <!-- ---- -->
 
       <div class="music_player">
-        <div class="cassete"></div>
+        <!-- volume -->
+        <div class="volume-box">
+          <img src="assets/volume_up.svg" alt="volume up" class="volume_up_btn" />
+          <div class="volume-track-total">
+            <div class="volume-track-current"></div>
+            <img src="assets/speaker.svg" alt="volume" class="speaker_icon" />
+          </div>
+          <img
+            src="assets/volume_down.svg"
+            alt="volume down"
+            class="volume_down_btn"
+          />
+        </div>
+
+        <!-- cassete -->
+        <div class="cassete-box">
+          <div class="cassete"></div>
+        </div>
         <div class="about-music">
           <h1 class="music-name">A Lowly Shoe Salesman</h1>
-          <p class="auther-name">Ludwig Göransson</p>
+          <p class="author-name">Ludwig Göransson</p>
         </div>
+
         <div class="music-time-box">
           <div>
             <span class="current-min">00</span>
@@ -37,15 +55,26 @@
         </div>
         <div class="control-box">
           <img
+            src="assets/previous.svg"
+            alt="previous song"
+            class="previous_song_icon"
+          />
+          <img
             src="assets/play_icon.svg"
             alt="play song"
             class="play_pause_icon"
           />
+          <img src="assets/next.svg" alt="next song" class="next_song_icon" />
         </div>
       </div>
     </main>
 
-    <!-- scrips -->
-    <script src="scripts/script.js" defer></script>
+    <!-- scripts -->
+
+    <script src="scripts/songData.js"></script>
+    <script src="scripts/playPause.js"></script>
+    <script src="scripts/durationCalc.js"></script>
+    <script src="scripts/changeSong.js"></script>
+    <script src="scripts/volume.js"></script>
   </body>
 </html>
