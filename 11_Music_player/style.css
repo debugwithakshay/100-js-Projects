@@ -39,7 +39,6 @@
   cursor: pointer;
 }
 
-
 .speaker_icon {
   width: 1.7rem;
   position: absolute;
@@ -127,6 +126,10 @@
   gap: 1rem;
   left: 50%;
   transform: translateX(-45%);
+}
+
+.music-time-box div:first-child {
+  width: 3.5rem;
 }
 
 .music-track-total {

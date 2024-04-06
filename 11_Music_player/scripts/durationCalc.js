@@ -33,9 +33,9 @@ function currentDurationFinder() {
       document.querySelector(".current-sec").innerText = currentSec;
     } else if (currentSec >= 60) {
       //setting current min
-      document.querySelector(".current-min").innerText = Math.floor(
+      document.querySelector(".current-min").innerText = padWithZero(Math.floor(
         currentSec / 60
-      );
+      ));
 
       //setting current sec if it is > 60
       document.querySelector(".current-sec").innerText = padWithZero(
