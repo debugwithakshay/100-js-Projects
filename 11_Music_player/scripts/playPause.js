@@ -26,6 +26,8 @@ function play() {
   cassete.style.animationPlayState = "running";
   //changing play/pause icon
   playPauseBtn.src = "assets/pause_icon.svg";
+  //start song current time
+  currentDurationFinder();
 }
 
 //pausing song
@@ -37,4 +39,3 @@ function pause() {
   //changing play/pause icon
   playPauseBtn.src = "assets/play_icon.svg";
 }
-

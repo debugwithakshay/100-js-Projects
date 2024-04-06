@@ -13,7 +13,7 @@
 
 .volume-box {
   position: absolute;
-  left: -4rem;
+  left: 1.5rem;
 }
 
 .volume-track-total {
@@ -140,7 +140,7 @@
 
 .music-track-current {
   height: 100%;
-  width: 60%;
+  width: 0%;
   position: absolute;
   background-color: #4158d0;
 }

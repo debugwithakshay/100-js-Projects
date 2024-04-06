@@ -29,6 +29,8 @@ function previousSong() {
   fetchSong(currentSongNo);
   play();
   totalDurationFinder();
+  //resetting current min
+  document.querySelector(".current-min").innerText = "00";
 }
 
 //switching to next song
@@ -41,4 +43,6 @@ function nextSong() {
   fetchSong(currentSongNo);
   play();
   totalDurationFinder();
+  //resetting current min
+  document.querySelector(".current-min").innerText = "00";
 }
