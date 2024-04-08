@@ -1,0 +1,116 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  background-color: rgb(103, 103, 243);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.roll-dice-box {
+  width: 34rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+
+.roll-dice-btn {
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  background-color: rgb(91, 91, 255);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.dice {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid rgb(91, 91, 255);
+  border-radius: 4px;
+  align-self: center;
+  margin-bottom: 3rem;
+}
+
+.dice-dot {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(91, 91, 255);
+  border-radius: 50%;
+}
+
+.shake-dice {
+  animation: shake 0.5s 3;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.one,
+.two,
+.three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dot-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.five {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.six {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
