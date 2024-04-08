@@ -56,9 +56,61 @@ main {
   background-color: rgb(255, 166, 0);
   border-radius: 50%;
   margin-top: 3rem;
+  border: 10px solid rgb(255, 194, 81);
+  transform: rotateX(0deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.coin-boundry{
-    
+.flipping {
+  animation: flipping 0.3s linear infinite;
 }
 
+@keyframes flipping {
+  0% {
+    transform: rotateX(10deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(10deg);
+  }
+}
+
+.control-box {
+  display: flex;
+  gap: 6rem;
+  margin-top: 4rem;
+}
+
+.flip-coin-btn {
+  font-family: "Poppins";
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  background-color: rgb(74, 74, 255);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.reset-btn {
+  font-family: "Poppins";
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid rgb(74, 74, 255);
+  background: transparent;
+  color: rgb(74, 74, 255);
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.coin-result {
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgb(252, 233, 209);
+}
