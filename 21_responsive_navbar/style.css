@@ -1,0 +1,134 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  background-color: rgb(103, 103, 243);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 7rem;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(103, 103, 243);
+}
+
+.menu-pc {
+  display: flex;
+  gap: 5rem;
+}
+
+.menu-pc li,
+.menu-phone li {
+  list-style: none;
+}
+
+.menu-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: rgb(103, 103, 243);
+}
+
+.menu-link:hover {
+  border-bottom: 2px solid rgb(103, 103, 243);
+}
+
+.login-btn {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  background-color: rgb(103, 103, 243);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-btn:hover {
+  box-shadow: 2px 2px 5px rgba(103, 103, 243, 0.331);
+}
+
+.burger-menu-icon {
+  display: none;
+  position: absolute;
+  right: 12rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.menu-phone-close {
+  display: none;
+  position: absolute;
+  width: 0px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  right: 0;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 2s;
+}
+
+.menu-phone-open {
+  display: flex;
+  position: absolute;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  right: 0;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 2s;
+}
+
+.close-menu-icon {
+  width: 2.5rem;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+}
+
+/* media queries */
+@media (max-width: 800px) {
+  .menu-pc {
+    display: none;
+  }
+
+  .burger-menu-icon {
+    display: inline;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <!-- navbar logo -->
+        <span class="logo">LOGO</span>
+        <!-- pc menu -->
+        <ul class="menu-pc">
+          <li><a href="#" class="menu-link">Home</a></li>
+          <li><a href="#" class="menu-link">Projects</a></li>
+          <li><a href="#" class="menu-link">Services</a></li>
+          <li><a href="#" class="menu-link">About</a></li>
+        </ul>
+        <!-- mobile menu icon-->
+        <img src="menu.svg" alt="open menu" class="burger-menu-icon" />
+
+        <!-- login btn -->
+        <button class="login-btn">Log In</button>
+      </nav>
+      <!-- mobile menu -->
+      <ul class="menu-phone-close menu-phone">
+        <li><a href="#" class="menu-link">Home</a></li>
+        <li><a href="#" class="menu-link">Projects</a></li>
+        <li><a href="#" class="menu-link">Services</a></li>
+        <li><a href="#" class="menu-link">About</a></li>
+        <!-- close menu icon -->
+        <img src="close.svg" alt="close menu icon" class="close-menu-icon"/>
+      </ul>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
