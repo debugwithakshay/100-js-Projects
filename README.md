@@ -15,12 +15,12 @@ Get ready for a rollercoaster of code, laughter, and maybe a few "aha!" moments.
 So buckle up, hit that star button, and join the JavaScript Joyride – where every line of code is a step closer to programming paradise! 💻✨**
 
 # Projects Type <br>
-1-5   = Basic Math Projects 📐 <br>
-6-10  = String & Number Manipulation 🔢 <br>
+1-10  = Basic DOM Projects, (manipulating text, color etc) 🎨 <br>
+11-20 = Little Logical Projects, (dice, music player, timer, counter) <br>
 11-15 = Conditional Projects ⛓️ <br>
 16-20 = Looping Projects 🔁 <br>
 21-30 = Function Based Projects ⚒️<br>
-31-60 = DOM Projects 🎨 <br>
+31-60 = DOM Projects  <br>
 
 
 # How to Open This Project
