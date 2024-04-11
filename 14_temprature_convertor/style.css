@@ -1,0 +1,68 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  background-color: rgb(103, 103, 243);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.temp-convert-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.ctf {
+  flex-direction: column;
+}
+
+.ftc {
+  flex-direction: column-reverse;
+}
+
+.temp-heading {
+  font-weight: 400;
+}
+
+input[type="text"] {
+  height: 4rem;
+  border: 1px solid rgb(191, 191, 191);
+  padding: 1rem;
+  font-family: "Poppins";
+  font-size: 1.8rem;
+}
+
+input[type="text"]:focus {
+  outline: 2px solid rgb(103, 103, 243);
+}
+
+#exchange_icon {
+  font-size: 3rem;
+  transform: rotate(90deg);
+  color: rgb(103, 103, 243);
+  cursor: pointer;
+}
